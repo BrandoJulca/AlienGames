@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AlienGames</title>	
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<link rel="icon" type="image/x-icon" href="imagen/BRANDO/ALIENGames.png"/>
+<style>
+	body {
+		background-color: #000000;
+		background-repeat: repeat;
+		color: #ffffff;
+		font-family: "Press Start 2P", cursive;
+		font-size: 16px;
+		line-height: 1.5;
+		padding: 3%;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 70px; /* Aumentar el tamaño del nombre */
+		padding-top: 10px; /* Reducir el espacio superior */
+		margin-top: 0; /* Eliminar completamente el espacio superior */
+	}
+
+	h2 {
+		font-size: 20px; /* Aumentar el tamaño del nombre */
+		padding-top: 0px; /* Reducir el espacio superior */
+		margin-top: 0; /* Eliminar completamente el espacio superior */
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center; /* Alinear los iframe al centro horizontalmente */
+		align-items: center;
+		height: 90vh;
+	}
+
+	.container iframe {
+		width: 95%;
+		height: 100%; /* Aumentar el alto de los iframe al 80% del contenedor */
+		border: none;
+		margin-bottom: 5%;
+
+	}
+
+	iframe{
+		margin-bottom: 5%;
+	}
+
+	.container iframe:hover {
+		box-shadow: 0 0 10px 2px #1fe1b1;
+		transition: 0.3s;
+	}
+
+	/* Estilos para el body cuando el mouse está sobre el iframe */
+	.hover-disabled {
+		background-color: #000000;
+		color: #1fe1b1;
+		font-family: "Press Start 2P", cursive;
+		transition: background-color 1s; /* Agregar una transición de 1 segundo para cambiar el color */
+		transition: color 1s; /* Agregar una transición de 1 segundo para cambiar el color */
+	}
+
+	img#IMG {
+		display: block; /* Remove inline image styling */
+		margin: 0 auto; /* Center the image */
+		max-width: 20%; /* Set a maximum width for the image */
+	}
+
+	.FOOT {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000000da;
+		color: #ffffff;
+		width: 100%;
+		height: 100px;
+		font-family: "Press Start 2P", cursive;
+		font-size: 100%;
+		text-align: center;
+		margin-top: auto; /* Push the footer to the bottom */
+	}
+
+#none{
+	margin-bottom: 5%;
+}
+
+</style>
+
+<body>
+	<img id="IMG" src="imagen/BRANDO/ALIENGames.png" alt="">
+	<h1>AlienGames</h1>
+	<div class="container">
+		<!-- Juego 1 -->
+		<h2>Juega juegos multijugador en mundos de cubos similares a Minecraft. ¡Construye, explora, practica parkour, lucha y mucho más!</h2>
+		<iframe src="https://www.1001juegos.com/embed/bloxdhop-io" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+		
+		<!-- Juego 2 -->
+		<h2>Chess Online Multiplayer es un juego de tablero de ajedrez al que puedes jugar con tu amigo o contra IA. Mueve tus piezas de ajedrez y deja sin opción a tu oponente. ¡Jaque mate!
+		</h2>
+		<iframe src="https://www.1001juegos.com/embed/chess-online-multiplayer-game" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+		<!-- Juego 3 -->
+		<h2>Échate una partida al tres en raya! Con este juego totalmente gratuito, podrás enfrentarte contra un amigo o contra la máquina</h2>
+		<iframe src="https://www.1001juegos.com/embed/ultimate-tic-tac-toe" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+		
+		<!-- Juego 4 -->
+		<h2>Billiards es un juego gratuito de billar en línea. Puedes jugar en solitario contra la IA o desafiar a otros jugadores en el modo de dos jugadores</h2>
+		<iframe src="https://www.1001juegos.com/embed/billiards" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+		
+		<!-- Juego 5 -->
+		<h2>Narrow One es un juego de acción en línea en el que lucharás contra otros jugadores en un servidor. En lugar de una pistola, se le dará un arco y flechas.</h2>
+		<iframe src="https://narrow.one" onmouseover="disableHover()" onmouseout="enableHover()"></iframe>
+		
+				<div class="FOOT">
+				  <p>&nbsp;&lt;/BrandoJulca&gt;&nbsp; © 2023 <br>Todos los derechos reservados.</p>
+	</div>
+	
+<script>
+	function disableHover() {
+		document.body.classList.add('hover-disabled');
+	}
+
+	function enableHover() {
+		document.body.classList.remove('hover-disabled');
+	}
+</script>
+</body>
+</html>
